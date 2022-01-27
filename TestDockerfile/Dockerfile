@@ -1,5 +1,5 @@
 # first test Dockerfile
-FROM nginx:1.18.0-alpine
+FROM nginx:1.19.0-alpine
 
 RUN echo "Test Run im Dockerfile"
 
