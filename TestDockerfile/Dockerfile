@@ -3,7 +3,7 @@ FROM nginx:1.19.0-alpine
 
 RUN echo "Test Run im Dockerfile"
 RUN apk update
-RUN apk add git
+RUN apk add --no-cache python2 py3-pip
 
 COPY index.html /usr/share/nginx/html
 
