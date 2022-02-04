@@ -2,6 +2,8 @@
 FROM nginx:1.19.0-alpine
 
 RUN echo "Test Run im Dockerfile"
+RUN apk update
+RUN apk add git
 
 COPY index.html /usr/share/nginx/html
 
